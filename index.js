@@ -12,7 +12,7 @@ const app = express();
 // Middleware Setup
 app.use(express.json());
 app.use(cors());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const PORT = process.env.PORT || 5050;
 
