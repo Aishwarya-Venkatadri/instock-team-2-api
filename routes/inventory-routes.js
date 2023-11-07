@@ -3,7 +3,9 @@ import inventoryController from "../controllers/inventory-controller.js";
 
 const router = express.Router();
 
-router.route("/").get(inventoryController.index).post(inventoryController.add);
+router.route("/")
+.get(inventoryController.index)
+.post(inventoryController.add);
 
 router
   .route("/:id")
