@@ -24,10 +24,6 @@ app.use("/warehouses", warehouseRoutes);
 // all inventory routes
 app.use("/inventories", inventoryRoutes);
 
-app.get("/rate-limit-test", (req, res) => {
-  res.send("yes");
-});
-
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`running at http://localhost:${PORT}`);
 });
