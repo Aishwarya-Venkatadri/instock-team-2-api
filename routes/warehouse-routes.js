@@ -165,6 +165,26 @@
  *        description: The warehouse was not found
  *      500:
  *        description: Some error happened
+ * /warehouses/{id}/inventories:
+ *   get:
+ *    summary: Get the inventories by warehouse id
+ *    tags: [Warehouses]
+ *    parameters:
+ *      - in: path
+ *        name: id
+ *        schema:
+ *           type: string
+ *        required: true
+ *        description: The warehouse id
+ *    responses:
+ *      200:
+ *        description: The inventories response by warehouse id
+ *        contens:
+ *          application/json:
+ *            schema:
+ *              $ref: '#/components/schemas/warehouses'
+ *      404:
+ *        description: The inventories or warehouse was not found
  */
 
 import express from "express";
