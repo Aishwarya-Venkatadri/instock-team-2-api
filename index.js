@@ -8,24 +8,23 @@ import rateLimitMiddleware from "./rate-limiter.js";
 import swaggerUi from "swagger-ui-express";
 import swaggerJSDoc from "swagger-jsdoc";
 
-
 // Swageer Setup
 const options = {
   definition: {
     openapi: "3.1.0",
     info: {
-      title: "LogRocket Express API with Swagger",
+      title: "InStock API Documentation - Team 2 🚀🧨",
       version: "0.1.0",
       description:
-        "This is a simple CRUD API application made with Express and documented with Swagger",
+        "In this API we have a total of 11 endpoints. You can test the endpoints with our interactive UI, which also provides sample requests. We've implemented a rate limiting rule, to cap requests at 12 per minute. We have our express app deployed on Fly.io and we're running a Mysql instance on AWS RDS.",
       license: {
         name: "MIT",
         url: "https://spdx.org/licenses/MIT.html",
       },
       contact: {
-        name: "LogRocket",
-        url: "https://logrocket.com",
-        email: "info@email.com",
+        name: "Team-2-Brainstation: (Aishwarya, Orkhan, Felix, Sopia, Ranjitha).",
+        url: "https://github.com/Aishwarya-Venkatadri/instock-team-2-api",
+        email: "engfelixreynoso@gmail.com",
       },
     },
     servers: [

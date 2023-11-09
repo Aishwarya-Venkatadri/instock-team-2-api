@@ -1,4 +1,3 @@
-
 /**
  * @swagger
  * components:
@@ -43,7 +42,7 @@
  *           description: The contact phone
  *         contact_email:
  *           type: string
- *           description: The contact email 
+ *           description: The contact email
  *         createdAt:
  *           type: string
  *           format: date
@@ -53,7 +52,6 @@
  *           format: date
  *           description: The date the warehouse was updated
  *       example:
- *         id: 3
  *         warehouse_name: Jersey City FX
  *         address: 300 Main Street
  *         city: New Jersey
@@ -62,8 +60,6 @@
  *         contact_position: Warehouse Manager
  *         contact_phone: +1 (646) 123-1234
  *         contact_email: bmcdonald@instock.com
- *         created_at: 2023-11-07T13:57:00.000Z
- *         updated_at: 2023-11-07T15:01:28.000Z  
  */
 
 /**

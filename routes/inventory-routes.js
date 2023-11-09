@@ -44,16 +44,12 @@
  *           format: date
  *           description: The date the warehouse was updated
  *       example:
- *         id: 21
- *         warehouse_id: 3
  *         item_name: Television
  *         description: This 50\", 4K LED TV provides a crystal-clear picture and vivid colors
  *         category: Electronics
  *         status: Out of Stock
  *         quantity: 0
- *         created_at: 2023-11-07T13:57:01.000Z
- *         updated_at: 2023-11-07T13:57:01.000Z
- * 
+ *
  */
 
 /**
@@ -156,7 +152,6 @@
  *      500:
  *        description: Some error happened
  */
-
 
 import express from "express";
 import inventoryController from "../controllers/inventory-controller.js";
