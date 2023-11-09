@@ -34,12 +34,14 @@ const findOne = async (req, res) => {
 };
 
 const add = async (req, res) => {
+  console.log(req.body);
   if (
     !req.body.item_name ||
     !req.body.description ||
     !req.body.category ||
     !req.body.status ||
-    !req.body.quantity
+    req.body["quantity"] === undefined
+    // !req.body.quantity
   ) {
     return res.status(400).json({
       message:
