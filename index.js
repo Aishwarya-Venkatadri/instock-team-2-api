@@ -29,7 +29,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:3000",
+        url: "https://instock-team-2-api.fly.dev/",
       },
     ],
   },
@@ -56,7 +56,7 @@ app.use("/warehouses", warehouseRoutes);
 app.use("/inventories", inventoryRoutes);
 
 app.use(
-  "/api-docs",
+  ["/", "/api-docs"],
   swaggerUi.serve,
   swaggerUi.setup(specs, { explorer: true })
 );
